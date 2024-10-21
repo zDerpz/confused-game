@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #1e1e1e; /* Header escuro */
+    background: #000000; /* Header escuro */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -42,7 +42,7 @@ section {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    background: #2a2a2a; /* Fundo das seções */
+    background: #000000; /* Fundo das seções */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
