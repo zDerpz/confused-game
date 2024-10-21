@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #181818, #0d0d0d); /* Fundo com gradiente escuro */
+    color: #f0f0f0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9); /* Header com opacidade */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.title-logo {
+    width: 250px;
+    animation: pulse 3s infinite; /* Animação de pulsação */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #1ce715;
+    text-shadow: 0px 0px 8px #1ce715;
+}
+
+/* Estilização das colunas laterais e layout geral */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.side-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    flex: 1; /* As colunas laterais ocupam 1 parte cada */
+}
+
+.side-images img {
+    width: 90%; /* As imagens laterais ocupam 90% da coluna */
+    max-width: 250px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-images img:hover {
+    transform: scale(1.05);
+}
+
+main {
+    flex: 6; /* O conteúdo central ocupa 2 partes */
+}
+
+section {
+    padding: 40px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.8); /* Fundo das seções mais translúcido */
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1ce715; /* Título em verde brilhante */
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+ul li {
+    font-size: 18px;
+    line-height: 2;
+    color: #7cfc00;
+}
+
+.section-gif {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #e0e0e0;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #222;
+    color: #e0e0e0;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #1ce715;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #1ce715;
+    color: #121212;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #12b813;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #181818;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .side-images {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .side-images img {
+        max-width: 120px;
+    }
+
+    main {
+        order: -1;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
