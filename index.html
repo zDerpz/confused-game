@@ -7,6 +7,18 @@
     <link rel="icon" type="image/x-icon" href="Pictures/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "7vK3rzlOn2qQqJk3t",
+        });
+    })();
+    </script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -60,12 +72,15 @@
                 <h2>Contact Us</h2>
                 <form>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Your name" autocomplete="given-name" required>
+
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Your email for us to reply" autocomplete="email" required>
+
                     <label for="message">Message:</label>
-                    <input type="text" id="message" name="message" required>
-                    <button type="submit">Send</button>
+                    <input type="text" id="message" name="message" placeholder="The message you want to send" autocomplete="off" required>
+
+                    <button type="submit" onclick="sendEmail()">Send</button>
                 </form>
             </section>
         </main>
