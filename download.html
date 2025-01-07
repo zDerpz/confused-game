@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="Pictures/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
                 <li><a href="index.html">About</a></li>
                 <li><a href="features.html">Features</a></li>
                 <li><a href="images.html">Images</a></li>
-                <li><a href="download.html">Download</a></li>
+		        <li><a href="download.html">Download</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -29,17 +30,17 @@
         </aside>
 
         <!-- Conteúdo Central -->
-        <main>
-            <section id="images" class="fade-in">
-                <h2>Images</h2>
-                <div class="image-gallery">
-                    <img src="Pictures/image1.png" alt="Screenshot 1">
-                    <img src="Pictures/image2.png" alt="Screenshot 2">
-                    <img src="Pictures/image3.png" alt="Screenshot 3">
-                </div>
-                <img src="Pictures/image4.gif" alt="Gameplay Gif" class="section-gif">
-            </section>
-        </main>
+        <div class="container">
+            <main>
+                <center>
+                    <h1>Insert the secret key to access the content:</h1>
+                    <form1>
+                        <input type="password" id="secretCode" placeholder="Secret Code">
+                        <button type="submit" onclick="checkCode()">Entrar</button>
+                    </form1>
+                </center>
+            </main>
+        </div>
 
         <!-- Coluna Direita -->
         <aside class="side-images">
