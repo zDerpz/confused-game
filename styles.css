@@ -250,36 +250,4 @@ footer {
     h3 {
         font-size: 12px;
     }
-
-    nav ul {
-        list-style: none;
-        padding-top: 10px;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin: 0 15px;
-    }
-    
-    nav a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease-in-out;
-    }
-
-    header {
-        background: rgba(0, 0, 0, 0.9); /* Header com opacidade */
-        color: #fff;
-        padding: 15px 0;
-        text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
-    
-    .title-logo {
-        width: 310px;
-        animation: pulse 3s infinite; /* Animação de pulsação */
-    }
 }
