@@ -13,18 +13,29 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Cabeçalho */
 header {
-    background: rgba(0, 0, 0, 0.9); /* Header com opacidade */
+    background: rgba(0, 0, 0, 0.9);
     color: #fff;
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Sombra suave para o cabeçalho */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .title-logo {
-    width: 310px;
+    width: 280px;
     animation: pulse 3s infinite; /* Animação de pulsação */
 }
 
@@ -37,18 +48,19 @@ header {
 nav ul {
     list-style: none;
     padding-top: 10px;
+    display: flex;
+    gap: 30px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease;
 }
 
 nav a:hover {
@@ -56,13 +68,14 @@ nav a:hover {
     text-shadow: 0px 0px 8px #1ce715;
 }
 
-/* Estilização das colunas laterais e layout geral */
+/* Layout geral */
 .container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
+    gap: 40px;
 }
 
 .side-images {
@@ -70,28 +83,30 @@ nav a:hover {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    flex: 1; /* As colunas laterais ocupam 1 parte cada */
+    flex: 1;
 }
 
 .side-images img {
-    width: 90%; /* As imagens laterais ocupam 90% da coluna */
+    width: 90%;
     max-width: 250px;
     border-radius: 12px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
 .side-images img:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Sombra suave nas imagens */
 }
 
 main {
-    flex: 6; /* O conteúdo central ocupa 2 partes */
+    flex: 6;
 }
 
+/* Estilo das seções */
 section {
     padding: 40px;
     margin: 40px auto;
-    background: rgba(0, 0, 0, 0.8); /* Fundo das seções mais translúcido */
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 12px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
@@ -103,10 +118,11 @@ section:hover {
 
 h2 {
     margin-bottom: 20px;
-    color: #1ce715; /* Título em verde brilhante */
+    color: #1ce715;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 32px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 ul li {
@@ -119,8 +135,10 @@ ul li {
     width: 100%;
     margin-top: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Galeria de Imagens */
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -138,6 +156,7 @@ ul li {
     transform: scale(1.05);
 }
 
+/* Formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -178,6 +197,7 @@ button:hover {
     background: #12b813;
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
@@ -186,8 +206,10 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
