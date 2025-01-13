@@ -248,4 +248,21 @@ footer {
     h3 {
         font-size: 12px;
     }
+
+    nav ul {
+        list-style: none;
+        padding-top: 10px;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
 }
