@@ -237,12 +237,18 @@ footer {
     }
 
     h3 {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     header .header-content {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        padding: 0 20px; /* Ensure spacing from edges */
+    }
+
+    .title-logo {
+        width: 200px; /* Resize the logo */
     }
 
     nav ul {
@@ -254,42 +260,20 @@ footer {
         margin-top: 20px;
     }
 
-    nav li {
-        display: inline;
+    nav ul li {
+        list-style: none;
     }
 
     nav a {
         font-size: 18px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out, text-shadow 0.3s ease;
     }
 
-    .container {
-        flex-direction: column;
-    }
-
-    .side-images {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .side-images img {
-        width: 50%;
-        max-width: 120px;
-        border-radius: 4px;
-    }
-
-    main {
-        order: -1;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 12px;
+    nav a:hover {
+        color: #1ce715;
+        text-shadow: 0px 0px 8px #1ce715;
     }
 }
