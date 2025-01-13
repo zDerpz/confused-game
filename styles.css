@@ -232,6 +232,7 @@ footer {
     .side-images img {
         width: 50%;
         max-width: 120px;
+        border-radius: 4px;
     }
 
     main {
@@ -265,5 +266,20 @@ footer {
         text-decoration: none;
         font-weight: bold;
         transition: color 0.3s ease-in-out;
+    }
+
+    header {
+        background: rgba(0, 0, 0, 0.9); /* Header com opacidade */
+        color: #fff;
+        padding: 15px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .title-logo {
+        width: 310px;
+        animation: pulse 3s infinite; /* Animação de pulsação */
     }
 }
