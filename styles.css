@@ -230,6 +230,7 @@ footer {
     }
 
     .side-images img {
+        width: 50%;
         max-width: 120px;
     }
 
