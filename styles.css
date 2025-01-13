@@ -46,7 +46,7 @@ header {
     100% { transform: scale(1); }
 }
 
-/* Navegação reorganizada em 2 grupos de 2 itens */
+/* Navegação reorganizada com 2 colunas */
 nav {
     display: flex;
     justify-content: space-between;
@@ -57,11 +57,14 @@ nav ul {
     list-style: none;
     padding-top: 10px;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
 
 nav ul li {
     display: inline;
+    width: 100%;
 }
 
 nav a {
@@ -170,12 +173,14 @@ ul li {
     }
 
     nav ul {
-        justify-content: space-between; /* Garante que os links fiquem organizados em 2 colunas */
-        gap: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px; /* Garante que fiquem dois botões por linha */
     }
 
     nav ul li {
-        width: 48%; /* Controla a largura dos links */
+        width: 48%; /* Cada botão ocupa metade da largura disponível */
     }
 
     .side-images {
