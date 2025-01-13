@@ -125,6 +125,15 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    margin-bottom: 20px;
+    color: #cf1e1e;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 ul li {
     font-size: 18px;
     line-height: 2;
@@ -234,5 +243,9 @@ footer {
 
     h2 {
         font-size: 24px;
+    }
+
+    h3 {
+        font-size: 12px;
     }
 }
